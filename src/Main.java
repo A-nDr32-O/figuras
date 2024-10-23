@@ -1,9 +1,13 @@
 //Andrés Felipe Ortega Cárdenas
 
+import java.awt.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        List lista = new List();
 
         rectangulo rec1 = new rectangulo();
 
@@ -20,7 +24,8 @@ public class Main {
             System.out.println("1.Rectangulo");
             System.out.println("2.Triangulo");
             System.out.println("3.Circulo");
-            System.out.println("4.Salir");
+            System.out.println("4.Lista de figuras");
+            System.out.println("5.Salir");
             System.out.print("Elige una figura:");
             op = teclado.nextInt();
 
@@ -93,8 +98,15 @@ public class Main {
                     ci1.cal_Perimetro();
                     break;
                 case 4:
+                    System.out.println("=======================");
+                    System.out.println(rec1.toString());
+                    System.out.println(tri1.toString());
+                    System.out.println(ci1.toString());
+                    break;
+                case 5:
+
                     break;
             }
-        }while (op!=4);
+        }while (op!=5);
     }
 }

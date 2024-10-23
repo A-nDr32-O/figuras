@@ -46,6 +46,11 @@ class rectangulo extends figuras{
         System.out.println("El perimetro del rectangulo es:" + perimetro);
 
     }
+
+    @Override
+    public String toString() {
+        return "rectangulo{" + "base=" + base + ", altura=" + altura + '}';
+    }
 }
 
 class triangulo extends figuras{
@@ -123,6 +128,11 @@ class triangulo extends figuras{
         System.out.println("\nEl perimetro del circulo es: " + perimetro);
 
     }
+
+    @Override
+    public String toString() {
+        return "triangulo{" + "base=" + base + ", altura=" + altura + ", lad1=" + lad1 + ", lad2=" + lad2 + ", lad3=" + lad3 + '}';
+    }
 }
 
 class circulo extends figuras{
@@ -180,5 +190,10 @@ class circulo extends figuras{
 
         System.out.println("El perimetro del circulo es: " + perimetro);
 
+    }
+
+    @Override
+    public String toString() {
+        return "circulo{" + "base=" + base + ", altura=" + altura + ", radio=" + radio + '}';
     }
 }
